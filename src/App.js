@@ -65,6 +65,7 @@ function App() {
                         <input type={"checkbox"} checked={task.isDone}/>
                         <TitleForTask>
                             {task.title}
+
                         </TitleForTask>
                         <div>
                             <DeleteTasksAlert/>
@@ -86,6 +87,7 @@ function App() {
                 </ContainerForSpan>
                 <div>
                     {renderTasksList()}
+                    <DeleteTasksAlert/>
                     <AddTasksAlert/>
                 </div>
             </Container>

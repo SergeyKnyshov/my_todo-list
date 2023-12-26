@@ -95,6 +95,11 @@ export const DeleteTasksAlert = () => {
                             Yes
                         </span>
                     </ButtonSure>
+                    <ButtonSure onClick={closeAlert}>
+                        <span>
+                            No
+                        </span>
+                    </ButtonSure>
                 </ContainerForForm>
             </Modal>
         );
@@ -105,10 +110,10 @@ export const DeleteTasksAlert = () => {
             {renderModal()}
             <Container>
                 <ButtonDelete onClick={showAlertButtonClick}>
-                    <img src={'vector.svg'}
+                    <img src={'./trash.svg'}
                          alt="trash can"
-                         height="500"
-                         width="500"/>
+                         height="1500"
+                         width="1500"/>
                 </ButtonDelete>
             </Container>
         </>
